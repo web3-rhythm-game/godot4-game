@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj5tfoi6y1ves"]
+
+[ext_resource type="FontFile" uid="uid://dyc41syp7k2fc" path="res://assets/Font/HyperStiffRoundBootiedOpossumRegular-XjVd.ttf" id="1_71rs3"]
+[ext_resource type="Script" uid="uid://bcqta0lmfiyby" path="res://scripts/game_end.gd" id="1_s7s1j"]
+
+[node name="GameEnd" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s7s1j")
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.227451, 0.180392, 0.247059, 1)
+metadata/_edit_lock_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_71rs3")
+theme_override_font_sizes/font_size = 50
+text = "Your Score"
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_71rs3")
+theme_override_font_sizes/font_size = 30
+text = " pts"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -263.0
+offset_top = -40.0
+offset_right = 263.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 12
+
+[node name="Label" type="Label" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_71rs3")
+theme_override_font_sizes/font_size = 15
+text = "Your Gameplay is put In the Blockchain."
+horizontal_alignment = 1

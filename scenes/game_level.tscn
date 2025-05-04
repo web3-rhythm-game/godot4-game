@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcsceff52eteu"]
+
+[ext_resource type="PackedScene" uid="uid://cm62op28wet6m" path="res://scenes/game_ui.tscn" id="1_6fv2f"]
+[ext_resource type="PackedScene" uid="uid://c5epg73abuxtf" path="res://scenes/key_listener.tscn" id="1_h3dka"]
+[ext_resource type="PackedScene" uid="uid://crpkyps4qidfy" path="res://scenes/level_editor.tscn" id="3_d1hwj"]
+
+[node name="GameLevel" type="Node2D"]
+
+[node name="GameUI" parent="." instance=ExtResource("1_6fv2f")]
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="KeyListener_D" parent="." instance=ExtResource("1_h3dka")]
+position = Vector2(-240, 292)
+key_name = "button_D"
+metadata/_edit_lock_ = true
+
+[node name="KeyListener_F" parent="." instance=ExtResource("1_h3dka")]
+position = Vector2(-80, 292)
+key_name = "button_F"
+key_array_num = 1
+metadata/_edit_lock_ = true
+
+[node name="KeyListener_J" parent="." instance=ExtResource("1_h3dka")]
+position = Vector2(80, 292)
+key_name = "button_J"
+key_array_num = 2
+metadata/_edit_lock_ = true
+
+[node name="KeyListener_K" parent="." instance=ExtResource("1_h3dka")]
+position = Vector2(240, 292)
+key_name = "button_K"
+key_array_num = 3
+metadata/_edit_lock_ = true
+
+[node name="LevelEditor" parent="." instance=ExtResource("3_d1hwj")]
+metadata/_edit_lock_ = true
